@@ -3,6 +3,7 @@ import Header from '@/components/Organisms/Header'
 import style from './page.module.css'
 import Hero from '@/components/Pages/Hero'
 import AboutSection from '@/components/Pages/AboutSection'
+import TeamSection from '@/components/Pages/TeamSection'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Header /> 
       <Hero /> 
       <AboutSection />
+      <TeamSection />
     </main>
   )
 }
