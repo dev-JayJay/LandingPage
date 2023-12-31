@@ -1,0 +1,15 @@
+.header{
+    width: 90%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navWrap{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+.li:hover{
+    text-decoration: underline;
+}
