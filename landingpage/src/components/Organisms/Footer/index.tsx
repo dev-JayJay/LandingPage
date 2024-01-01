@@ -1,23 +1,53 @@
-import styled from "styled-components"
-import style from "@/components/Organisms/Header/Header.module.css"
+import style from "./footer.module.css"
+import { Routes } from "@/components/utilis/Routes";
 
-export const footer = styled.div`
-background-color: #27272A;
-`;
+
+export const Nav = [
+    {
+      lable:"Home",
+      path:Routes.LandingPage
+    },
+    {
+      lable:"About",
+      path:Routes.About
+    },
+    {
+      lable:"Team",
+      path:Routes.Team
+    },
+    {
+      lable:"Testimonials",
+      path:Routes.Testimonials
+    }
+  ]
 
 function Footer() {
   return (
-    <footer>
-    <div className={style.wrapper}>
-    <div className={style.item_one}>
+    <section className={style.footerWrap}>
+    <div>
     <h4>
-        Explore <span>Schovela !</span>
+        Schovela<span> !</span>
       </h4>
-      <h5>Get access to free, verified & readable Edu-resources.</h5>
-      <h6>Get acces to numerous resources by downloading our app either on Apple store or Play store.</h6>
+      <h5>Your go to app for free verified & readabl Edu-resources.</h5>
     </div>
+    <div className={style.container}>
+    <ul className={style.navWrap}>
+      {
+        Nav.map((items, index) => {
+          return(
+            <li 
+            key={index}
+            className={style.li}
+            >
+              { items.lable }
+            </li>
+          )
+        })
+      }
+    </ul>
+    <p>All Right Reserved  Schovela</p>
     </div>
-    </footer>
+    </section>
   )
 }
 

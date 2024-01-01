@@ -1,0 +1,42 @@
+.footerWrap{
+    background-color: #27272A;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footerWrap > div{
+    padding: 30px 20px;
+}
+.footerWrap h4 {
+    color: #BF0110;
+    font-size: 25px;
+    font-weight: bold;
+}
+.footerWrap span {
+    color: #FFFF;
+}
+.footerWrap h5{
+    font-size: 20px;
+    color: #FFFF;
+    width: 70%;
+}
+
+.navWrap {
+    display: flex;
+    flex-direction: row;
+}
+.navWrap li{
+    font-weight: 400;
+    color: #FFFF;
+    font-size: 20px;
+    margin: 5px;
+    padding: 10px;
+}
+.container p {
+    text-align: center;
+    color: #FFFF;
+    font-size: 15px;
+}
+.container{
+    display: block;
+    justify-content: space-evenly;
+}
