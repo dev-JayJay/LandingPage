@@ -2,13 +2,17 @@ import { SiteContent } from "@/components/utilis/SiteContent/TestimonialContent"
 import { TestimonyCard } from "@/components/Molecules/Card/TestimoiCard";
 import { Testimony } from "@/components/Molecules/Card/TestimoiCard/type";
 import styled from "styled-components";
+import { TestimonialHeader } from "@/components/Atom/SubHeaderTestimonials";
 
 const Testimonials = () => {
     const TestimonyList: Testimony[] = SiteContent.Testimonials
     return(
         <section>
             <div>
-                {/* Section sub header */}
+                <TestimonialHeader 
+                title="Don’t just take our words"
+                description="172+ Happy Schovela Users"
+                />
             </div>
             <TestimonyWrap>
                 {

@@ -1,7 +1,7 @@
-import styled from "styled-components";
-import { SectionTextProps } from "./type";
+import { TestimonialsTextProps } from "./type";
+import styled from "styled-components"
 
-export const SectionText: React.FC<SectionTextProps> = ({
+export const TestimonialHeader: React.FC<TestimonialsTextProps> = ({
   title,
   description,
   align,
@@ -13,8 +13,8 @@ export const SectionText: React.FC<SectionTextProps> = ({
           align === "left" ? "left" : align === "right" ? "right" : "center",
       }}
     >
-      <p>{title} <span>Schovela</span></p>
-      <h5>{description}</h5>
+      <p>{description}</p>
+      <h5>{title}</h5>
     </SectionTextWrap>
   );
 };
@@ -22,22 +22,18 @@ export const SectionText: React.FC<SectionTextProps> = ({
 export const SectionTextWrap = styled.div`
   margin-top: 40px;
   margin-bottom: 40px;
-  p {
-    font-size: 35px;
+  h5 {
+    font-size: 30px;
     color: #101828;
     font-weight: 500;
     line-height: 50px;
     margin: 0;
     padding: 0;
   }
-  span{
-    color: #BF0110;
-    font-size: 30px;
-  }
-  h5 {
+  p {
     width: 50%;
     font-size: 18px;
-    color: #101828;
+    color: #BF0110;
     font-weight: 400;
     margin: 0 auto;
   }
