@@ -4,6 +4,7 @@ import style from './page.module.css'
 import Hero from '@/components/Pages/Hero'
 import AboutSection from '@/components/Pages/AboutSection'
 import TeamSection from '@/components/Pages/TeamSection'
+import Testimonials from '@/components/Pages/Testimonials'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Hero /> 
       <AboutSection />
       <TeamSection />
+      <Testimonials />
     </main>
   )
 }
