@@ -1,7 +1,7 @@
 export const Routes = {
-    LandingPage : "/",
-    About : "/about",
-    Team : "/Team",
-    Testimonials : "/Testimonials"
+    LandingPage : "#Hero",
+    About : "#AboutSection",
+    Team : "#Team",
+    Testimonials : "#Testimonials"
 
 }

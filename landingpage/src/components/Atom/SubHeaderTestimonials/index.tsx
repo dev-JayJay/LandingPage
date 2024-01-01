@@ -34,7 +34,7 @@ export const SectionTextWrap = styled.div`
     width: 50%;
     font-size: 18px;
     color: #BF0110;
-    font-weight: 400;
+    font-weight: bold;
     margin: 0 auto;
   }
 `;

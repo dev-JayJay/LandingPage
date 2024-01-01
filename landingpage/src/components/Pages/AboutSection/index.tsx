@@ -1,12 +1,13 @@
 import { SectionText } from "@/components/Atom/SubHeaders"
 import Text from "@/components/Atom/Text"
 import Image from "next/image"
+import { Container } from "postcss"
 import styled from "styled-components"
 
 
 function AboutSection() {
   return (
-    <section>
+    <section className="bg-[#F5F5F5]" id="AboutSection">
         <SectionText
         title="About"
         description=".Elevate Your Educational Journey With Schovela - Where Innovation Meets Education"
@@ -17,6 +18,7 @@ function AboutSection() {
           alt="schovela Iamge"
           width={450}
           height={450}
+          style={{borderRadius:'25px'}}
           />
         <Text
         title="Elevate Your Learning Experience!"
@@ -33,6 +35,7 @@ function AboutSection() {
           alt="schovela Iamge"
           width={450}
           height={450}
+          style={{borderRadius:'25px'}}
           />
         </AboutWrap>
     </section>
@@ -41,10 +44,12 @@ function AboutSection() {
 
 export default AboutSection;
 
+
 export const AboutWrap = styled.div`
   display: flex;
-  gap: 10;
+  flex-direction: row;
   width: 70%;
-  margin: 10px auto;
   align-items: center;
+  justify-content: space-evenly;
+  margin: 10px auto;
 `;

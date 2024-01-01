@@ -35,10 +35,10 @@ export const SectionTextWrap = styled.div`
     font-size: 30px;
   }
   h5 {
-    width: 50%;
+    width: 55%;
     font-size: 18px;
     color: #101828;
-    font-weight: 400;
+    font-weight: 500;
     margin: 0 auto;
   }
 `;

@@ -2,6 +2,7 @@ import { Button } from "@/components/Atom/Button";
 import SchovelaLogo from "@/components/Atom/Logo"
 import { Routes } from "@/components/utilis/Routes";
 import style from './Header.module.css'
+import Link from "next/link";
 
 export const Nav = [
   {
@@ -34,7 +35,7 @@ function Header() {
             key={index}
             className={style.li}
             >
-              { items.lable }
+              <Link href={items.path}>{ items.lable }</Link>
             </li>
           )
         })

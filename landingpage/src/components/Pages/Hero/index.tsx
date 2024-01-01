@@ -23,7 +23,7 @@ export const Icon = styled.div`
 
 function Hero() {
     return (
-      <div className={style.wrapper}>
+      <section className={style.wrapper} id="Hero">
         <div className={style.item_one}>
         <h4>
             Explore <span>Schovela !</span>
@@ -61,7 +61,7 @@ function Hero() {
         width={500}
         height={300}
         />
-      </div>
+      </section>
     )
   }
   

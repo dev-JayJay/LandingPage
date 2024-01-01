@@ -33,6 +33,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
+text-align: center;
     h5{
         color: #101828;
         font-size: 20px;
@@ -40,5 +41,6 @@ flex-direction: column;
     }
     span{
         color: #BF0110;
+        font-weight: 400;
     }
 `;

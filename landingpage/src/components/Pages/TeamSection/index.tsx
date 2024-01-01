@@ -8,7 +8,7 @@ const TeamSection = () => {
     const TeamList: TeamCardProps[] = SiteContent.Team;
 
   return (
-    <section>
+    <section id="Team">
         <SectionText 
         title="Meet  team"
         description="Our team is dedicated to providing and ensuring breaking barriers and fostering a dynamic educational experience"

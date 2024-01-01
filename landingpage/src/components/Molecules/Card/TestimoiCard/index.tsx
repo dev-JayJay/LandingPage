@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { Testimony } from "./type";
 import styled from "styled-components";
+import { FaStar,FaStarHalfStroke } from "react-icons/fa6";
+
 
 export const TestimonyCard: React.FC<Testimony> = ({
     Name,
@@ -18,6 +20,13 @@ export const TestimonyCard: React.FC<Testimony> = ({
             style={{borderRadius:'5px'}}
             />
             <div>
+                <div className="flex flex-wrap items-start text-blue-500">
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                    <FaStar />
+                    <FaStarHalfStroke />
+                </div>
                 <p className="text-[#090914] w-80">
                     { Content }
                 </p>
@@ -40,7 +49,8 @@ align-items: center;
 
 export const TestimonyText = styled.div`
 display: flex;
-margin-bottom: 0px;
+margin: 0px;
+align-items: flex-end;
 
 h5{
     color: #090914;
@@ -51,5 +61,4 @@ span{
     color: #64748B;
     font-size: 12px;
 }
-
 `;

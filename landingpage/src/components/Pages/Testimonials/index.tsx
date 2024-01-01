@@ -7,7 +7,7 @@ import { TestimonialHeader } from "@/components/Atom/SubHeaderTestimonials";
 const Testimonials = () => {
     const TestimonyList: Testimony[] = SiteContent.Testimonials
     return(
-        <section>
+        <section id="Testimonials">
             <div>
                 <TestimonialHeader 
                 title="Don’t just take our words"
