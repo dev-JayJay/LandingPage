@@ -1,6 +1,5 @@
 export interface TeamCardProps  {
-    userName : string;
+    Name : string;
     role : string;
     image : string;
-    status : boolean
 }

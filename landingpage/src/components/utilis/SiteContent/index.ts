@@ -1,34 +1,29 @@
 export const SiteContent = {
     Team: [
         {
-          userName: "Femi Fatokun",
+          Name: "Femi Fatokun",
           role: "Team lead/ Software Engineer",
-          status: true,
-          image: "/images/femi.jepg",
+          image: "",
         },
         {
-            userName: "Tijani Sheu Ahmad",
+            Name: "Tijani Sheu Ahmad",
             role: "Graphics Designer",
-            status: true,
-            image: "/images/insight2.jepg",
+            image: "/images/insight.png",
           },
           {
-            userName: "Samson Gbemileke O",
+            Name: "Samson Gbemileke O",
             role: "Backend Developer",
-            status: true,
-            image: "/images/samolala.jpeg",
+            image: "/images/samson.png",
           },
           {
-            userName: "John Jonathan Gaiya",
+            Name: "John Jonathan Gaiya",
             role: "Frontend Developer",
-            status: true,
-            image: "/images/jayjay.jpeg",
+            image: "/images/jayjay.png",
           },
           {
-            userName: "Raji Toheeb Ishola",
+            Name: "Raji Toheeb Ishola",
             role: "UI/UX-Brand Designerr",
-            status: true,
-            image: "/assets/images/user/avatar-male-1.png",
+            image: "/images/Avatar.png",
           },
       ],
 }

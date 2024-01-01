@@ -3,31 +3,36 @@ import { TeamCardProps } from './type'
 import styled from 'styled-components'
 
 export const TeamCard: React.FC<TeamCardProps> = ({
-    userName,
+    Name,
     role,
     image,
-    status
 }) => {
     return (
-        <section>
+        <TeamWarp>
             <div>
             <Image
             src={image}
             alt='images'
-            width={300}
-            height={300}
+            width={100}
+            height={100}
+            style={{ borderRadius: '50%' }}
             />
             </div>
             <div>
-                <h5> { userName }</h5>
+                <h5> { Name }</h5>
                 <span> { role } </span>
             </div>
 
-        </section>
+        </TeamWarp>
     )
 }
 
 export const TeamWarp = styled.div`
+margin: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
     h5{
         color: #101828;
         font-size: 20px;
