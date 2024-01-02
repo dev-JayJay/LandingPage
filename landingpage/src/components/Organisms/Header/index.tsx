@@ -35,7 +35,7 @@ function Header() {
             key={index}
             className={style.li}
             >
-              <Link href={items.path}>{ items.lable }</Link>
+              <Link href={items.path} className="text-bold">{ items.lable }</Link>
             </li>
           )
         })

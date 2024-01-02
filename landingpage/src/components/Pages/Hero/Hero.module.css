@@ -6,11 +6,13 @@
 }
 .item_one{
     margin: 0 auto;
+    width: 40%;
 }
 .wrapper h4{
     font-weight: bold;
     font-size: 30px;
     color: #101828;
+    margin: 5px;
 }
 .wrapper h4 span {
     color: #BF0110;
@@ -20,6 +22,10 @@
     font-weight: 300;
     font-size: 25px;
     word-spacing: 3px;
+    margin: 5px;
+}
+.wrapper h6{
+    margin: 10px;
 }
 .info_btn{
     margin-top: 10px;

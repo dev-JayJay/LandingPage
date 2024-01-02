@@ -19,8 +19,8 @@ export const TestimonyCard: React.FC<Testimony> = ({
             height={150}
             style={{borderRadius:'5px'}}
             />
-            <div>
-                <div className="flex flex-wrap items-start text-blue-500">
+            <div className="m-5" >
+                <div className="flex flex-wrap items-start text-blue-500 mb-5">
                     <FaStar />
                     <FaStar />
                     <FaStar />
@@ -51,7 +51,8 @@ export const TestimonyText = styled.div`
 display: flex;
 margin: 0px;
 align-items: flex-end;
-
+margin-top: 8px;
+padding: 5px;
 h5{
     color: #090914;
     font-weight: 400;
@@ -60,5 +61,7 @@ h5{
 span{
     color: #64748B;
     font-size: 12px;
+    padding: 5px;
+    align-items: center;
 }
 `;

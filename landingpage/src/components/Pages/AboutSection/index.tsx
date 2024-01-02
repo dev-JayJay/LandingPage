@@ -7,7 +7,7 @@ import styled from "styled-components"
 
 function AboutSection() {
   return (
-    <section className="bg-[#F5F5F5]" id="AboutSection">
+    <section className="bg-[#F5F5F5] p-5 mt-2" id="AboutSection">
         <SectionText
         title="About"
         description=".Elevate Your Educational Journey With Schovela - Where Innovation Meets Education"

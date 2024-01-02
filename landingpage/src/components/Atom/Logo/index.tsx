@@ -15,7 +15,7 @@ function SchovelaLogo() {
   return (
     <LogoWrap>
         <Image
-        src='/images/logo.jpg'
+        src='/images/Logo.jpg'
         alt='schovela logo'
         width={45}
         height={45}

@@ -3,7 +3,7 @@ export const SiteContent = {
         {
           Name: "Femi Fatokun",
           role: "Team lead/ Software Engineer",
-          image: "",
+          image: "/images/Avatar (4).png",
         },
         {
             Name: "Tijani Sheu Ahmad",

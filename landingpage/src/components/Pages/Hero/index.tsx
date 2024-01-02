@@ -5,12 +5,18 @@ import styled from "styled-components";
 import { FaApple } from "react-icons/fa";
 import { DiAndroid } from "react-icons/di";
 
-export const ButtonContainer = styled.div<{ gap?: number }>`
+export const ButtonContainer = styled.div<{ gap?: number, Space?:string }>`
   display: flex;
   gap: ${(props) =>
   (props.gap ?
   `${props.gap}px`
-  :'30px')};
+  :'10px')};
+  text-align: center;
+  justify-content: ${(props) =>
+    (props.Space === 'space' ?
+      'space-between'
+      : 'center'
+    )};
 `;
 export const Icon = styled.div`
   width: 20px;
@@ -30,7 +36,7 @@ function Hero() {
           </h4>
           <h5>Get access to free, verified & readable Edu-resources.</h5>
           <h6>Get acces to numerous resources by downloading our app either on Apple store or Play store.</h6>
-          <ButtonContainer>
+          <ButtonContainer Space='space'>
           <Button>
            <ButtonContainer>
             <DiAndroid className='text-white text-2xl'/>
@@ -44,7 +50,7 @@ function Hero() {
             </ButtonContainer>
           </Button>
           </ButtonContainer>
-          <ButtonContainer gap={60}>
+          <ButtonContainer gap={60} Space='space'>
             <div className={style.info_btn}>
               <span>172+</span>
               <p>Users <br/> so far</p>
