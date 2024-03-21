@@ -11,7 +11,7 @@ const Testimonials = () => {
             <div>
                 <TestimonialHeader 
                 title="Don’t just take our words"
-                description="172+ Happy Schovela Users"
+                description="300+ Happy Schovela Users"
                 />
             </div>
             <TestimonyWrap>
