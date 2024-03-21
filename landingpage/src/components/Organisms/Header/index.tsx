@@ -1,31 +1,31 @@
 import { Button } from "@/components/Atom/Button";
 import SchovelaLogo from "@/components/Atom/Logo"
 import { Routes } from "@/components/utilis/Routes";
-import style from './Header.module.css'
+import style from './style.module.css';
 import Link from "next/link";
 
 export const Nav = [
   {
-    lable:"Home",
+    label:"Home",
     path:Routes.LandingPage
   },
   {
-    lable:"About",
+    label:"About",
     path:Routes.About
   },
   {
-    lable:"Team",
+    label:"Team",
     path:Routes.Team
   },
   {
-    lable:"Testimonials",
+    label:"Testimonials",
     path:Routes.Testimonials
   }
 ]
 
 function Header() {
   return (
-   <header className={style.header}>
+   <div className={style.header}>
       <SchovelaLogo />
     <ul className={style.navWrap}>
       {
@@ -35,14 +35,14 @@ function Header() {
             key={index}
             className={style.li}
             >
-              <Link href={items.path} className="text-bold">{ items.lable }</Link>
+              <Link href={items.path} className="text-bold">{ items.label }</Link>
             </li>
           )
         })
       }
     </ul>
     <Button>Get Acess Now</Button>
-   </header>
+   </div>
   )
 }
 

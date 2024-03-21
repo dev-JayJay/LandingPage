@@ -1,0 +1,27 @@
+.body {
+    width: 100;
+}
+.site_number_wrap {
+    width: 80%;
+    margin: 25px auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.site_number_container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 150px;
+    height: 100px;
+    padding: 13px 5px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+.site_number_container div {
+    font-size: 30px;
+    font-weight: 450;
+}
+.site_number_container span {
+    font-size: 17px;
+    font-weight: 400;
+}
