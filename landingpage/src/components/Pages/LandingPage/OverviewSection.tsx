@@ -3,8 +3,20 @@ import axios from "axios";
 import { SectionText } from "@/components/Atom/SubHeaders";
 import style from "./style.module.css";
 
+interface AnalyticsData {
+    total_user: number;
+    total_content: number;
+    total_views: number;
+    downloads: number;
+  }
+
 const OverviewSection = () => {
-  const [analyticsData, setAnalyticsData] = useState([]);
+    const [analyticsData, setAnalyticsData] = useState<AnalyticsData>({
+        total_user: 0,
+        total_content: 0,
+        total_views: 0,
+        downloads: 0,
+      });
 
   useEffect(() => {
     const fetchData = async () => {
