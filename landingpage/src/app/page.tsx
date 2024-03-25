@@ -7,15 +7,21 @@ import OverviewSection from "@/components/Pages/LandingPage/OverviewSection";
 import TeamSection from "@/components/Pages/LandingPage/TeamSection";
 import Testimonials from "@/components/Pages/LandingPage/Testimonials";
 import Footer from "@/components/Organisms/Footer";
+import { useState } from "react";
 
 export default function Home() {
+  const [heroData, setHeroData] = useState(null);
+
+  const receiveDataFromOverview = (data) => {
+    setHeroData(data);
+  };
   return (
     <main className={style.body}>
       <Header />
-      <Hero />
+      <Hero data={heroData} />
       <AboutSection />
       <TeamSection />
-      <OverviewSection />
+      <OverviewSection onDataReceived={receiveDataFromOverview} />
       <Testimonials />
       <Footer />
     </main>

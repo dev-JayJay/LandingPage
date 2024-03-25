@@ -10,8 +10,12 @@ interface AnalyticsData {
     total_views: number;
     downloads: number;
   }
+  interface OverviewSectionProps {
+    onDataReceived: (data: any) => void; // Adjust the type of data as needed
+  }
+  
 
-const OverviewSection = () => {
+const OverviewSection = ({onDataReceived}: OverviewSectionProps) => {
     const [analyticsData, setAnalyticsData] = useState<AnalyticsData>({
         total_user: 0,
         total_content: 0,
@@ -83,6 +87,15 @@ const OverviewSection = () => {
         startCountingAnimation("downloads");
     }
   }, [inView]);
+
+  useEffect(() => {
+    // Send data to Home component when analyticsData updates
+    const data = {
+      Users: analyticsData.total_user,
+      Downloads: analyticsData.downloads,
+    };
+    onDataReceived(data);
+  }, [analyticsData, onDataReceived]);
 
   return (
     <div className="body">
