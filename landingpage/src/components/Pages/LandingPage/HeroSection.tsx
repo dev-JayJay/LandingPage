@@ -57,7 +57,7 @@ const Hero = ({ data }) => {
               {/* users number */}
               {userData && (
                 <>
-                  {/* <span>{userData.Users}</span> */}
+                  <span>{userData.Users}</span>
                   <p>Total Users</p>
                 </>
               )}
@@ -66,7 +66,7 @@ const Hero = ({ data }) => {
               {/* downloads number */}
               {userData && (
                 <>
-                  {/* <span>{userData.Downloads}</span> */}
+                  <span>{userData.Downloads}</span>
                   <p>Total Downloads</p>
                 </>
               )}
