@@ -1,33 +1,40 @@
 .wrapper{
-    width: 70%;
+    width: 75%;
     display: flex;
+    gap: 0;
     margin: 0 auto;
     align-items: center;
 }
 .item_one{
     margin: 0 auto;
-    width: 40%;
+    width: 55%;
 }
 .wrapper h4{
+    padding: 0;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 40px;
     color: #101828;
-    margin: 5px;
+    margin: 3px;
 }
 .wrapper h4 span {
     color: #BF0110;
 }
 .wrapper h5{
+    padding: 0;
     color: gray;
-    font-weight: 300;
-    font-size: 25px;
-    word-spacing: 3px;
-    margin: 5px;
+    font-weight: 400;
+    font-size: 30px;
+    word-spacing: 4px;
+    margin: 0px;
+    letter-spacing: 1px;
 }
+
 .wrapper h6{
-    margin: 10px;
+    margin: 10px 0;
+    font-size: 17px;
+    font-weight: 300;
 }
-.info_btn{
+/* .info_btn{
     margin-top: 10px;
     display: flex;
     flex-direction: row;
@@ -43,4 +50,8 @@
     text-align: center;
     justify-items: center;
     margin-top: 10px;
+} */
+.HeroButton {
+    display: flex;
+    gap: 20px;
 }
