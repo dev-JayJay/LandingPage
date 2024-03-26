@@ -39,7 +39,7 @@ const OverviewSection = ({onDataReceived}: OverviewSectionProps) => {
         if (!animationStarted[fieldName]) {
           let start = 0;
           const end = analyticsData[fieldName];
-          const duration = 2000;
+          const duration = 1000;
           const range = end - start;
           let current = start;
           const increment = end > start ? 1 : -1;
@@ -92,7 +92,7 @@ const OverviewSection = ({onDataReceived}: OverviewSectionProps) => {
     // Send data to Home component when analyticsData updates
     const data = {
       Users: analyticsData.total_user,
-      Downloads: analyticsData.downloads,
+      total_content: analyticsData.total_content,
     };
     onDataReceived(data);
   }, [analyticsData, onDataReceived]);
