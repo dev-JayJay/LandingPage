@@ -6,8 +6,14 @@ import styled from "styled-components";
 // import { DiAndroid } from "react-icons/di";
 import { useState, useEffect } from "react";
 
-const Hero = ({ data }) => {
-  const [userData, setUserData] = useState();
+interface UserData {
+  Users: number;
+  total_content: number;
+}
+
+
+const Hero = ({ data }: { data: UserData | null }) => {
+  const [userData, setUserData] = useState<UserData | null>(null);
 
   useEffect(() => {
     // Only update 'userData' if 'data' has changed
@@ -16,7 +22,7 @@ const Hero = ({ data }) => {
     }
   }, [data, userData]); // Add 'userData' as a dependency
 
-  console.log("this is the data from the overview", userData);
+  // console.log("this is the data from the overview", userData);
 
   return (
     <div>
@@ -52,7 +58,7 @@ const Hero = ({ data }) => {
               />
             </button>
           </div>
-          <div>
+          <div className={style.info_btn_wrapper} >
             <div className={style.info_btn}>
               {/* users number */}
               {userData && (
@@ -66,12 +72,11 @@ const Hero = ({ data }) => {
               {/* downloads number */}
               {userData && (
                 <>
-                  <span>{userData.Downloads}</span>
-                  <p>Total Downloads</p>
+                  <span>{userData.total_content}</span>
+                  <p>Total contents <br/> Consumed</p>
                 </>
               )}
             </div>
-            <div className={style.info_btn}>{/* users nunber */}</div>
           </div>
         </div>
         <Image
