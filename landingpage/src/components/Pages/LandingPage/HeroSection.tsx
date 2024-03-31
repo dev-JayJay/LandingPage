@@ -7,7 +7,7 @@ import styled from "styled-components";
 import { useState, useEffect } from "react";
 
 interface UserData {
-  Users: number;
+  total_views: number;
   total_content: number;
 }
 
@@ -21,8 +21,8 @@ const Hero = ({ data }: { data: UserData | null }) => {
       setUserData(data);
     }
   }, [data, userData]); // Add 'userData' as a dependency
-
-  // console.log("this is the data from the overview", userData);
+  
+  // console.log("this is the data from the overview", totalViews);
 
   return (
     <div>
@@ -50,7 +50,7 @@ const Hero = ({ data }: { data: UserData | null }) => {
             <button>
               {/* replace with image */}
               <Image
-                src="/images/playstore.svg"
+                src="/images/playStore.svg"
                 alt="schovela logo"
                 width={150}
                 height={70}
@@ -61,19 +61,19 @@ const Hero = ({ data }: { data: UserData | null }) => {
           <div className={style.info_btn_wrapper} >
             <div className={style.info_btn}>
               {/* users number */}
-              {userData && (
+              {userData !== null && (
                 <>
-                  <span>{userData.Users}</span>
-                  <p>Total Users</p>
+                  <span>{userData.total_views}</span>
+                  <p>Total views</p>
                 </>
               )}
             </div>
             <div className={style.info_btn}>
               {/* downloads number */}
-              {userData && (
+              {userData !== null && (
                 <>
                   <span>{userData.total_content}</span>
-                  <p>Total contents <br/> Consumed</p>
+                  <p>Total contents <br /> Consumed</p>
                 </>
               )}
             </div>

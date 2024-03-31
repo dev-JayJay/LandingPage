@@ -10,16 +10,16 @@ import Footer from "@/components/Organisms/Footer";
 import { useState } from "react";
 
 export default function Home() {
-  const [heroData, setHeroData] = useState<{ Users: number; total_content: number } | null>(null);
+  const [heroData, setHeroData] = useState<{ total_views: number; total_content: number } | null>(null);
 
-  const receiveDataFromOverview = (data: { Users: number; total_content: number }) => {
+  const receiveDataFromOverview = (data: { total_views: number; total_content: number }) => {
     setHeroData(data);
   };
   
   return (
     <main className={style.body}>
       <Header />
-      <Hero data={heroData} />
+      <Hero data={heroData} />                                         
       <AboutSection />
       <TeamSection />
       <OverviewSection onDataReceived={receiveDataFromOverview} />
