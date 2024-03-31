@@ -91,7 +91,7 @@ const OverviewSection = ({onDataReceived}: OverviewSectionProps) => {
   useEffect(() => {
     // Send data to Home component when analyticsData updates
     const data = {
-      Users: analyticsData.total_user,
+      total_views: analyticsData.total_views,
       total_content: analyticsData.total_content,
     };
     onDataReceived(data);
@@ -100,7 +100,7 @@ const OverviewSection = ({onDataReceived}: OverviewSectionProps) => {
   return (
     <div className="body">
       <SectionText
-        title="Site Overview -"
+        title="Schovela Coverage -"
         description="Total Users, Contents, Views and DownLoads"
       />
       <div className={style.site_number_wrap} ref={ref}>
