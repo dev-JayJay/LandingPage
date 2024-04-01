@@ -2,8 +2,6 @@ import Image from "next/image";
 import style from "./Hero.module.css";
 // import { Button } from "@/components/Atom/Button";
 import styled from "styled-components";
-// import { FaApple } from "react-icons/fa";
-// import { DiAndroid } from "react-icons/di";
 import { useState, useEffect } from "react";
 
 interface UserData {
@@ -25,7 +23,7 @@ const Hero = ({ data }: { data: UserData | null }) => {
   // console.log("this is the data from the overview", totalViews);
 
   return (
-    <div>
+    <div style={{margin: "0px",padding: "0px"}}>
       <div className={style.wrapper}>
         <div className={style.item_one}>
           <h4>

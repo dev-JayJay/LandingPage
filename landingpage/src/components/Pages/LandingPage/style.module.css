@@ -25,3 +25,14 @@
     font-size: 17px;
     font-weight: 400;
 }
+
+@media screen and (max-width: 768px) {
+    .site_number_wrap {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    .site_number_container {
+        border-radius: 20%;
+        width: 130px;
+    }
+}

@@ -37,4 +37,8 @@ export const TestimonyWrap = styled.div`
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  /* @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: left;
+  } */
 `;
