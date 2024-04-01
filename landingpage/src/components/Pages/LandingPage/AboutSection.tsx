@@ -50,4 +50,10 @@ export const AboutWrap = styled.div`
   align-items: center;
   justify-content: space-evenly;
   margin: 10px auto;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    img {
+      display: none;
+    }
+  }
 `;

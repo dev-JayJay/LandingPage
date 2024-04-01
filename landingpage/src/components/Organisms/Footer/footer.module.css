@@ -1,4 +1,5 @@
 .footerWrap{
+    width: 100%;
     background-color: #27272A;
     display: flex;
     justify-content: space-evenly;
@@ -39,4 +40,17 @@
 .container{
     display: block;
     justify-content: space-evenly;
+}
+
+@media screen and (max-width: 768px) {
+    .footerWrap{
+        width: 100%;
+        padding: 0 10px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navWrap {
+        display: flex;
+        flex-direction: column;
+    }
 }

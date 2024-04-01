@@ -61,3 +61,37 @@
     display: flex;
     gap: 20px;
 }
+
+
+@media screen and (max-width: 768px) {
+    .wrapper{
+        width: 100%;
+    }
+    .item_one{
+        padding: 0 40px;
+        width: 100%;
+    }
+    .wrapper h4{
+        font-size: 30px;
+        margin: 1.5px;
+    }
+    .wrapper h4 span {
+        color: #BF0110;
+    }
+    .wrapper h5{
+        padding: 0;
+        font-size: 25px;
+        word-spacing: 4px;
+        margin: 0px;
+        letter-spacing: 0px;
+    }
+    
+    .wrapper h6{
+        margin: 2px 0 7px 0;
+        font-size: 15px;
+        font-weight: 300;
+    }
+    .HeroImage {
+        display: none;
+    }
+}
