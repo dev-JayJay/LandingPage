@@ -46,7 +46,10 @@ margin: 20px;
 align-items: center;
 @media screen and (max-width: 768px) {
     flex-direction: column;
-    align-items: start;
+    align-items: left;
+    text-align: left;
+    margin: 0;
+    gap: 20px;
   }
 `;
 
