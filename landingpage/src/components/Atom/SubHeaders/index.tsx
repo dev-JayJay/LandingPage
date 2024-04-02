@@ -41,4 +41,9 @@ export const SectionTextWrap = styled.div`
     font-weight: 500;
     margin: 0 auto;
   }
+  @media screen and (max-width: 768px) {
+    h5 {
+    display: none;
+  }
+  }
 `;

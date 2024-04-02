@@ -45,7 +45,7 @@ function Footer() {
         })
       }
     </ul>
-    <p>All Right Reserved  Schovela</p>
+    <p>All Right Reserved <span>@</span> Schovela</p>
     </div>
     </section>
   )

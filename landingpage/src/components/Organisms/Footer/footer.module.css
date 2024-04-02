@@ -32,25 +32,44 @@
     margin: 5px;
     padding: 10px;
 }
+.container{
+    display: block;
+    justify-content: space-evenly;
+}
 .container p {
     text-align: center;
     color: #FFFF;
     font-size: 15px;
 }
-.container{
-    display: block;
-    justify-content: space-evenly;
-}
 
 @media screen and (max-width: 768px) {
     .footerWrap{
         width: 100%;
-        padding: 0 10px;
+        padding: 0;
         display: flex;
         justify-content: space-between;
     }
     .navWrap {
-        display: flex;
+        display: none;
         flex-direction: column;
+    }
+    .footerWrap h4 {
+        display: none;
+    }
+    .footerWrap h5 {
+        display: none;
+    }
+    .container {
+        width: 100%;
+    }
+    .container p {
+        padding: 0;
+        margin: 0;
+        color: #BF0110;
+        text-align: center;
+        font-weight: 500;
+    }
+    .container span {
+        color: #FFFF;
     }
 }
