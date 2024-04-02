@@ -100,7 +100,7 @@ const OverviewSection = ({onDataReceived}: OverviewSectionProps) => {
   return (
     <div className="body">
       <SectionText
-        title="Schovela Coverage -"
+        title=" Coverage -"
         description="Total Users, Contents, Views and DownLoads"
       />
       <div className={style.site_number_wrap} ref={ref}>
