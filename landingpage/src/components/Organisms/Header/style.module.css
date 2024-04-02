@@ -16,23 +16,33 @@
 .Button {
   display: none;
 }
+.showMenu {
+  display: flex;
+}
 @media screen and (max-width: 768px) {
   .header {
-    position: relative;
+    padding: 0;
+    margin: 0;
+    position: fixed;
   }
   .navWrap {
+    display: none;
     width: 100%;
     height: 100%;
   top: 50%;
   left: 50%;
   position: fixed;
-  transform: translate(-50%, 0%);
+  transform: translate(-50%, -41.5%);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   color: #fff;
+  font-weight: 500;
+  font-size: 20px;
   background-color: #5c5c5e;
+  padding: 0;
+  margin: 0;
   }
   .btnAcess {
     display: none;
@@ -49,5 +59,8 @@
   }
   .Button:hover {
     cursor: pointer;
+  }
+  .showMenu {
+    display: none;
   }
 }

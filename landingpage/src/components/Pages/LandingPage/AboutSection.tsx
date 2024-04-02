@@ -52,6 +52,7 @@ export const AboutWrap = styled.div`
   margin: 10px auto;
   @media screen and (max-width: 768px) {
     width: 100%;
+    flex-direction: column;
     img {
       display: none;
     }

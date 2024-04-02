@@ -46,17 +46,9 @@
     .footerWrap{
         width: 100%;
         padding: 0;
-        display: flex;
-        justify-content: space-between;
+        margin: 0;
     }
-    .navWrap {
-        display: none;
-        flex-direction: column;
-    }
-    .footerWrap h4 {
-        display: none;
-    }
-    .footerWrap h5 {
+    .footerWrap div:nth-child(1), .navWrap {
         display: none;
     }
     .container {

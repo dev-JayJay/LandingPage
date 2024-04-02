@@ -31,16 +31,18 @@ function Header() {
   return (
    <div className={style.header}>
       <SchovelaLogo />
-      <ul className={`${style.navWrap} ${showMenu ? style.showMenu : ""}`}>
+      <ul className={`${style.navWrap} ${showMenu ? "" : style.showMenu }`}>
       {
         Nav.map((items, index) => {
           return(
+            <>
             <li 
             key={index}
             className={style.li}
             >
               <Link href={items.path} className="text-bold">{ items.label }</Link>
             </li>
+            </>
           )
         })
       }
