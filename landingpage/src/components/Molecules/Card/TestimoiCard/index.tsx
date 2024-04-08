@@ -50,6 +50,9 @@ align-items: center;
     text-align: left;
     margin: 0;
     gap: 20px;
+    p {
+        width: 90%;
+    }
   }
 `;
 
