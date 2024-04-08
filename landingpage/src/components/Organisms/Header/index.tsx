@@ -32,6 +32,7 @@ function Header() {
    <div className={style.header}>
       <SchovelaLogo />
       <ul className={`${style.navWrap} ${showMenu ? "" : style.showMenu }`}>
+        <div onClick={()=> setShowMenu(!showMenu)} className={style.Button}>{ showMenu ? <CgClose /> : <HiOutlineMenuAlt2 /> }</div>
       {
         Nav.map((items, index) => {
           return(
